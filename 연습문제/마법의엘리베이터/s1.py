@@ -14,8 +14,7 @@ def solution(storey):
 
         q, r = current // 10, current % 10
 
-        if q:
-            heapq.heappush(queue, (cost + r, q))
+        heapq.heappush(queue, (cost + r, q))
         heapq.heappush(queue, (cost + (10 - r), q + 1))
 
     return answer

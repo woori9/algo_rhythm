@@ -10,7 +10,7 @@ def solution(storey):
 
         if current < 10:
             answer = min(answer, cost + current, cost + 10 - current + 1)
-            continue
+            break
 
         q, r = current // 10, current % 10
 

@@ -9,6 +9,7 @@ a, b = map(int, input().split())
 m = int(input())
 graph = [[] for _ in range(n + 1)]
 visited = [0] * (n + 1)
+visited[a] = 1
 queue = deque([(a, 0)])
 result = -1
 

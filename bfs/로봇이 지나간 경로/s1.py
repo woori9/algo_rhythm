@@ -4,7 +4,7 @@ sys.stdin = open('input.txt', encoding='UTF8')
 input = sys.stdin.readline
 
 direction = [(0, 1), (1, 0), (0, -1), (-1, 0)]
-direction_shape = ['>', 'v', '<', '^'] # 0 1 2 3
+direction_shape = ['>', 'v', '<', '^']
 a, b = map(int, input().split())
 graph = [input().replace('\n', '') for _ in range(a)]
 start = None
@@ -34,7 +34,6 @@ for i in range(a):
                 visited[i][j] = 1
                 break
 
-print(start)
 queue = deque([start])
 result = ''
 

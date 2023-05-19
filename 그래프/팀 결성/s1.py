@@ -9,7 +9,7 @@ parent = [i for i in range(n + 1)]
 def find_parent(node):
     if parent[node] != node:
         parent[node] = find_parent(parent[node])
-    return node
+    return parent[node]
 
 
 def union(node1, node2):
